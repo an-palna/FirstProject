@@ -1,0 +1,12 @@
+<button mat-raised-button (click)="reset()" >New game</button>
+
+{{calculation()}}
+
+<div class="example-container">
+  <mat-form-field appearance="fill">
+    <mat-label>Result</mat-label>
+    <input matInput type="number" [(ngModel)]="result">
+  </mat-form-field>
+</div>
+
+<button mat-raised-button (click)="ok()">OK</button>
