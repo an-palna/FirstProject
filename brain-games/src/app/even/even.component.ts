@@ -25,12 +25,18 @@ export class EvenComponent implements OnInit {
     return 'Is number ' + this.num + ' even?';
   }
 
-  ok() {
-    let isEven = 'yes';
+  yes() {
     if (this.num % 2 !== 0) {
-      isEven = 'no';
+      return alert("Sorry! It's incorrect.");
     }
-    this.answer === isEven ? alert('Correct!') : alert("Sorry! It's incorrect.");
+    return alert('Correct!');
+  }
+
+  no () {
+    if (this.num % 2 !== 0) {
+      return alert('Correct!')
+    }
+    return alert("Sorry! It's incorrect.");
   }
 
   reset() {

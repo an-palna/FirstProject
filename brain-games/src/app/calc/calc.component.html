@@ -1,12 +1,15 @@
-<button mat-raised-button (click)="reset()" >New game</button>
+<div class="header-title" style="font-size: 28px">
+ {{calculation()}}
+</div>
 
-{{calculation()}}
-
-<div class="example-container">
+<div class="header-title">
   <mat-form-field appearance="fill">
     <mat-label>Result</mat-label>
     <input matInput type="number" [(ngModel)]="result">
   </mat-form-field>
+  <button class="button-padding" mat-raised-button (click)="ok()">OK</button>
 </div>
 
-<button mat-raised-button (click)="ok()">OK</button>
+<div class="header-title">
+  <button mat-raised-button (click)="reset()" >New game</button>
+</div>
